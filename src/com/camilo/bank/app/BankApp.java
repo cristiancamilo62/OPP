@@ -14,6 +14,7 @@ public class BankApp {
             System.out.println(per.toString());
             System.out.println("\n");
         }
+
     }
     static ArrayList<Person> bankAccounts = new ArrayList<Person>();
     static  Scanner dataInput = new Scanner(System.in);

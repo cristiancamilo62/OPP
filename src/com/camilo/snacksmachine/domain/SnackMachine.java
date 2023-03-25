@@ -53,7 +53,7 @@ public class SnackMachine {
     }
 
     public void increaseAmountTheSnack(int units, String code) {
-        if (searchSnackForCode(code) != null && this.searchSnackForCode(code).getUnits() + units <= 6) {
+        if (searchSnackForCode(code) != null && this.searchSnackForCode(code).getUnits() + units <= CAPACITY_SNACKS) {
             searchSnackForCode(code).setUnits(searchSnackForCode(code).getUnits() + units);
             System.out.println("Snacks add with successful");
         } else {

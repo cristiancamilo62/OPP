@@ -1,4 +1,4 @@
-package com.camilo.Agenda.domain;
+package com.camilo.agenda.domain;
 
 import java.util.ArrayList;
 import java.util.Comparator;

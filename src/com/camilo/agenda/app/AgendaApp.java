@@ -1,7 +1,7 @@
-package com.camilo.Agenda.app;
+package com.camilo.agenda.app;
 
-import com.camilo.Agenda.domain.Contact;
-import com.camilo.Agenda.domain.Agenda;
+import com.camilo.agenda.domain.Contact;
+import com.camilo.agenda.domain.Agenda;
 
 import java.util.Scanner;
 

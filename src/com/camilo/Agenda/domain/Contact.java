@@ -1,4 +1,4 @@
-package com.camilo.agenda.domain;
+package com.camilo.Agenda.domain;
 
 public class Contact {
     private String numberContact;

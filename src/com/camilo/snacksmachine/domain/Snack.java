@@ -1,4 +1,4 @@
-package com.camilo.snakesmachine.domain;
+package com.camilo.snacksmachine.domain;
 
 public class Snack {
     private String name;

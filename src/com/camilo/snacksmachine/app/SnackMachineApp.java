@@ -1,7 +1,7 @@
-package com.camilo.snakesmachine.app;
+package com.camilo.snacksmachine.app;
 
-import com.camilo.snakesmachine.domain.Snack;
-import com.camilo.snakesmachine.domain.SnackMachine;
+import com.camilo.snacksmachine.domain.Snack;
+import com.camilo.snacksmachine.domain.SnackMachine;
 
 import java.util.Scanner;
 

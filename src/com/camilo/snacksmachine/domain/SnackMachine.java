@@ -1,4 +1,4 @@
-package com.camilo.snakesmachine.domain;
+package com.camilo.snacksmachine.domain;
 
 import java.util.ArrayList;
 import java.util.Comparator;

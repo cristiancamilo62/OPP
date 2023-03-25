@@ -11,7 +11,7 @@ public class SnackMachineApp {
     }
     public static void menu() {
         Scanner EnterData = new Scanner(System.in);
-        SnackMachine snacksMachine1 = new SnackMachine("snackMachine");
+        SnackMachine snacksMachine1 = new SnackMachine("SnackMachine");
         String decision;
         boolean aux = true;
         do {

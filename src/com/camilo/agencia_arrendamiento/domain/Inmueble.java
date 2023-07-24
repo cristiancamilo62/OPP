@@ -6,10 +6,9 @@ public abstract class Inmueble {
     private long valorArriendo;
     protected boolean arrendado;
 
-    public Inmueble(String direccion, long valorVenta, long valorArriendo) {
+    public Inmueble(String direccion, long valorVenta) {
         this.direccion = direccion;
         this.valorVenta = valorVenta;
-        this.valorArriendo = valorArriendo;
     }
 
     public String getDireccion() {
@@ -38,11 +37,8 @@ public abstract class Inmueble {
 
     @Override
     public String toString() {
-        return "Inmueble{" +
-                "direccion='" + direccion + '\'' +
+        return "direccion='" + direccion + '\'' +
                 ", valorVenta=" + valorVenta +
-                ", valorArriendo=" + valorArriendo +
-                ", arreandado=" + arrendado +
                 '}';
     }
 }

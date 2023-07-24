@@ -50,14 +50,14 @@ public class Guayabita {
                 "1. Lo primero que se hara es pedir la cantidad de jugadores.\n" +
                 "Nota : la cantidad de jugadores debe ser mayor a 1\n" +
                 "2. Se les pedira que ingrese en pote que quieren tener como apuesta inicial.\n" +
-                "3. A continuación, se le pedirá que ingrese el nombre y la cantidad de dinero que cada jugador tiene para apostar\n" +
+                "3. A continuación, se le pedirá que ingrese el nombre y la cantidad de dinero que cada Jugador tiene para apostar\n" +
                 "4. Una vez que se han ingresado los nombres y el dinero de todos los jugadores, el juego comenzará automáticamente.\n" +
-                "   A cada jugador se le preguntara si desea lanzar el dado, en caso de que el jugador desida no lanzarlo\n" +
+                "   A cada Jugador se le preguntara si desea lanzar el dado, en caso de que el Jugador desida no lanzarlo\n" +
                 "   sera eliminado automaticamente, si el jugar desidio lanzar el dado, se le preguntara si decide realizar una apuesta.\n" +
                 "Nota : En el primer lanzamiento el dado debe ser diferente de 1 y 6, ademas la apuesta debe ser menor a la cantidad del pote\n" +
-                "5. Si un jugador se queda sin dinero, será eliminado del juego. El juego continuará hasta que quede un solo jugador\n" +
+                "5. Si un Jugador se queda sin dinero, será eliminado del juego. El juego continuará hasta que quede un solo Jugador\n" +
                 "   o hasta que el pote quede sin dinero\n" +
-                "6. Cuando finalice el juego, se mostrará un mensaje de felicitación al jugador ganador, junto con la cantidad de dinero que ha ganado.\n" +
+                "6. Cuando finalice el juego, se mostrará un mensaje de felicitación al Jugador ganador, junto con la cantidad de dinero que ha ganado.\n" +
                 "   Ademas de eso se mostraran los jugadores que quedaron en juego, y los jugadores que fueron eliminadores.", APP_TITLE, JOptionPane.INFORMATION_MESSAGE, APP_ICON);
     }
 
@@ -86,7 +86,7 @@ public class Guayabita {
 
             do {
                 try {
-                    name = JOptionPane.showInputDialog(null, "Ingrese el nombre del jugador " + (pos + 1), APP_TITLE, JOptionPane.QUESTION_MESSAGE, APP_ICON, null, "").toString().trim();
+                    name = JOptionPane.showInputDialog(null, "Ingrese el nombre del Jugador " + (pos + 1), APP_TITLE, JOptionPane.QUESTION_MESSAGE, APP_ICON, null, "").toString().trim();
                     if (name == null || (name.isEmpty())) {
                         JOptionPane.showMessageDialog(null, "La celda no puede estar vacia", APP_TITLE, JOptionPane.INFORMATION_MESSAGE, APP_ICON);
                     } else {
@@ -184,10 +184,10 @@ public class Guayabita {
                             }
                             py.setMoney(new_money);
                         } else {
-                            JOptionPane.showMessageDialog(null, "Continua el siguiente jugador", APP_TITLE, JOptionPane.INFORMATION_MESSAGE, APP_ICON);
+                            JOptionPane.showMessageDialog(null, "Continua el siguiente Jugador", APP_TITLE, JOptionPane.INFORMATION_MESSAGE, APP_ICON);
                         }
                     } else {
-                        JOptionPane.showMessageDialog(null, "No puedes apostar.\nContinua el siguiente jugador", APP_TITLE, JOptionPane.INFORMATION_MESSAGE, APP_ICON);
+                        JOptionPane.showMessageDialog(null, "No puedes apostar.\nContinua el siguiente Jugador", APP_TITLE, JOptionPane.INFORMATION_MESSAGE, APP_ICON);
                         puedeContinuar = true;
                     }
                 } else {

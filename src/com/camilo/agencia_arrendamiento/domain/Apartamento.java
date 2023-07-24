@@ -1,8 +1,11 @@
 package com.camilo.agencia_arrendamiento.domain;
 
 public class Apartamento extends Inmueble implements Arrendable{
+    private long valorArriendo;
+
     public Apartamento(String direccion, long valorVenta, long valorArriendo) {
-        super(direccion, valorVenta, valorArriendo);
+        super(direccion, valorVenta);
+        this.valorArriendo = valorArriendo;
     }
 
     @Override
@@ -17,7 +20,9 @@ public class Apartamento extends Inmueble implements Arrendable{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Apartamento{" +
+                "valorArriendo=" + valorArriendo +
+                ", arrendado=" + arrendado +
+                ", "+super.toString();
     }
-
 }

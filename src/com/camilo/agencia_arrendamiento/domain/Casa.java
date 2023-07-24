@@ -1,9 +1,11 @@
 package com.camilo.agencia_arrendamiento.domain;
 
 public class Casa extends Inmueble implements Arrendable{
+    private long valorarriendo;
 
     public Casa(String direccion, long valorVenta, long valorArriendo) {
-        super(direccion, valorVenta, valorArriendo);
+        super(direccion, valorVenta);
+        this.valorarriendo = valorArriendo;
     }
 
     @Override
@@ -13,11 +15,14 @@ public class Casa extends Inmueble implements Arrendable{
 
     @Override
     public void devolver() {
-        this.arrendado= false;
+        this.arrendado = false;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Casa{" +
+                "valorarriendo=" + valorarriendo +
+                ", arrendado=" + arrendado +
+               ", "+ super.toString();
     }
 }

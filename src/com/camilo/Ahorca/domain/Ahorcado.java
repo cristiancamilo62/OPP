@@ -68,12 +68,7 @@ public class Ahorcado {
                 System.out.println("has ganado");
                 finalizarJuego = true;
             }
-
-
         }while(finalizarJuego != true);
-
-
-
     }
     public boolean verificarPalabra(String palabra){
         boolean salida = false;

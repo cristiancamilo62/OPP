@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Ahorcado {
     Scanner datos = new Scanner(System.in);
     private static final byte INTENTOS_TOTALES = 5;
-    private String palabras[] = {"hola","pendejo","luis","mejor"};
+    private String palabras[] = {"hola","submarino","luis","mejor"};
     private char[] palabrasecreta;
     private Jugador jugador;
 
@@ -37,7 +37,7 @@ public class Ahorcado {
 
     public void jugar(){
         this.registrarJugador();
-        System.out.println("Bienvenido sexy "+ this.jugador.getNombre());
+        System.out.println("Bienvenido al juego "+ this.jugador.getNombre());
 
         String palabra =(this.conseguirPalabra());
         this.guionesPalabra((palabra));
